@@ -1,0 +1,1 @@
+C:\Users\nikit\diabee\android\app\src\main\kotlin\com\example\diabee\MainActivity.kt

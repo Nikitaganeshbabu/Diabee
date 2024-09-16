@@ -1,0 +1,339 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.diabee"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:11:5-66
+15-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:11:22-64
+16    <!-- Add permissions -->
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:5:5-80
+17-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:5:22-78
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:6:5-65
+18-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:6:22-63
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:7:5-67
+19-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:7:22-65
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:8:5-77
+20-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:8:22-75
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:9:5-76
+21-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:9:22-74
+22    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+22-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:10:5-79
+22-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:10:22-76
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:12:5-64
+23-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:12:22-62
+24
+25    <uses-feature android:name="android.hardware.camera" />
+25-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:13:5-60
+25-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:13:19-57
+26    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- Required to query activities that can process text -->
+26-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:14:1-66
+26-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:14:15-63
+27    <queries>
+27-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:56:5-64:11
+28        <intent>
+28-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:57:5-60:14
+29            <action android:name="android.intent.action.PROCESS_TEXT" />
+29-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:58:9-68
+29-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:58:17-66
+30
+31            <data android:mimeType="text/plain" />
+31-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:59:9-46
+31-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:59:15-44
+32        </intent>
+33        <intent>
+33-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:61:5-63:14
+34            <action android:name="android.hardware.camera" />
+34-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:62:9-58
+34-->C:\Users\nikit\diabee\android\app\src\main\AndroidManifest.xml:62:17-55
+35        </intent>
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.FLASHLIGHT" />
+38-->[:flutter_barcode_scanner] C:\Users\nikit\diabee\android\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-69
+38-->[:flutter_barcode_scanner] C:\Users\nikit\diabee\android\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-66
+39    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+39-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+39-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+40    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+40-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+40-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+41    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+42    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+42-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:10:5-79
+42-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:10:22-76
+43    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+43-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:25:5-79
+43-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:25:22-76
+44    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+44-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:26:5-88
+44-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:26:22-85
+45    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+45-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:27:5-82
+45-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:27:22-79
+46    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+46-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:26:5-110
+46-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:26:22-107
+47
+48    <permission
+48-->[androidx.core:core:1.9.0] C:\Users\nikit\.gradle\caches\transforms-3\9b6e5e647c419b65a8c17a3bed5cca14\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+49        android:name="com.example.diabee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.9.0] C:\Users\nikit\.gradle\caches\transforms-3\9b6e5e647c419b65a8c17a3bed5cca14\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.9.0] C:\Users\nikit\.gradle\caches\transforms-3\9b6e5e647c419b65a8c17a3bed5cca14\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.example.diabee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+52-->[androidx.core:core:1.9.0] C:\Users\nikit\.gradle\caches\transforms-3\9b6e5e647c419b65a8c17a3bed5cca14\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.9.0] C:\Users\nikit\.gradle\caches\transforms-3\9b6e5e647c419b65a8c17a3bed5cca14\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+53
+54    <application
+55        android:name="android.app.Application"
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.9.0] C:\Users\nikit\.gradle\caches\transforms-3\9b6e5e647c419b65a8c17a3bed5cca14\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+57        android:debuggable="true"
+58        android:enableOnBackInvokedCallback="true"
+59        android:icon="@mipmap/ic_launcher"
+60        android:label="diabee"
+61        android:largeHeap="true"
+61-->[:flutter_barcode_scanner] C:\Users\nikit\diabee\android\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-33
+62        android:theme="@style/Theme.AppCompat.NoActionBar" >
+62-->[:flutter_barcode_scanner] C:\Users\nikit\diabee\android\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-59
+63
+64        <!-- Add your existing activity declarations here -->
+65
+66        <activity
+67            android:name="com.example.diabee.MainActivity"
+68            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+69            android:exported="true"
+70            android:hardwareAccelerated="true"
+71            android:launchMode="singleTop"
+72            android:theme="@style/LaunchTheme"
+73            android:windowSoftInputMode="adjustResize" >
+74
+75            <!--
+76                 Specifies an Android theme to apply to this Activity as soon as
+77                 the Android process has started. This theme is visible to the user
+78                 while the Flutter UI initializes. After that, this theme continues
+79                 to determine the Window background behind the Flutter UI.
+80            -->
+81            <meta-data
+82                android:name="io.flutter.embedding.android.NormalTheme"
+83                android:resource="@style/NormalTheme" />
+84
+85            <intent-filter>
+86                <action android:name="android.intent.action.MAIN" />
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+89            </intent-filter>
+90        </activity>
+91
+92        <!--
+93             Don't delete the meta-data below.
+94             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+95        -->
+96        <meta-data
+97            android:name="flutterEmbedding"
+98            android:value="2" />
+99
+100        <!-- Add service declaration for handling notifications -->
+101        <service
+102            android:name="com.dexterous.flutterlocalnotifications.ForegroundService"
+103            android:exported="false" />
+104        <service
+104-->[:cloud_firestore] C:\Users\nikit\diabee\android\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+105            android:name="com.google.firebase.components.ComponentDiscoveryService"
+105-->[:cloud_firestore] C:\Users\nikit\diabee\android\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+106            android:directBootAware="true"
+106-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+107            android:exported="false" >
+107-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:16:13-37
+108            <meta-data
+108-->[:cloud_firestore] C:\Users\nikit\diabee\android\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+109-->[:cloud_firestore] C:\Users\nikit\diabee\android\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:cloud_firestore] C:\Users\nikit\diabee\android\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+111            <meta-data
+111-->[:firebase_core] C:\Users\nikit\diabee\android\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+112                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+112-->[:firebase_core] C:\Users\nikit\diabee\android\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:firebase_core] C:\Users\nikit\diabee\android\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:17:13-19:85
+115                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+115-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:18:17-122
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:19:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:20:13-22:85
+118                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+118-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:21:17-111
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-firestore:24.11.1] C:\Users\nikit\.gradle\caches\transforms-3\10d5766de9ef6ca3624ab418158fb62d\transformed\jetified-firebase-firestore-24.11.1\AndroidManifest.xml:22:17-82
+120            <meta-data
+120-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:37:13-39:85
+121                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+121-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:38:17-139
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:39:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\nikit\.gradle\caches\transforms-3\813fed769df664e32bac88d9dec7820f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+124                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+124-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\nikit\.gradle\caches\transforms-3\813fed769df664e32bac88d9dec7820f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\nikit\.gradle\caches\transforms-3\813fed769df664e32bac88d9dec7820f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\nikit\.gradle\caches\transforms-3\813fed769df664e32bac88d9dec7820f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+127                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+127-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\nikit\.gradle\caches\transforms-3\813fed769df664e32bac88d9dec7820f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\nikit\.gradle\caches\transforms-3\813fed769df664e32bac88d9dec7820f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\be38b43a928272bcee1bff92f697afc6\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+130                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+130-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\be38b43a928272bcee1bff92f697afc6\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\be38b43a928272bcee1bff92f697afc6\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+133                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+133-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+135        </service>
+136
+137        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+137-->[:flutter_barcode_scanner] C:\Users\nikit\diabee\android\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-91
+137-->[:flutter_barcode_scanner] C:\Users\nikit\diabee\android\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:19-88
+138
+139        <receiver
+139-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+140            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+140-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-97
+141            android:exported="false" />
+141-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+142        <receiver
+142-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-28:20
+143            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+143-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-101
+144            android:exported="false" >
+144-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+145            <intent-filter>
+145-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-27:29
+146                <action android:name="android.intent.action.BOOT_COMPLETED" />
+146-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:17-79
+146-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:25-76
+147                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+147-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-84
+147-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-81
+148                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+148-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-82
+148-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-79
+149                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+149-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
+149-->[:flutter_local_notifications] C:\Users\nikit\diabee\android\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
+150            </intent-filter>
+151        </receiver>
+152
+153        <property
+153-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:30:9-32:61
+154            android:name="android.adservices.AD_SERVICES_CONFIG"
+154-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:31:13-65
+155            android:resource="@xml/ga_ad_services_config" />
+155-->[com.google.android.gms:play-services-measurement-api:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\633d934efc7c09fe6dd8f8d9c327ea87\transformed\jetified-play-services-measurement-api-21.6.2\AndroidManifest.xml:32:13-58
+156
+157        <receiver
+157-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:29:9-33:20
+158            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+158-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:30:13-85
+159            android:enabled="true"
+159-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:31:13-35
+160            android:exported="false" >
+160-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:32:13-37
+161        </receiver>
+162
+163        <service
+163-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:35:9-38:40
+164            android:name="com.google.android.gms.measurement.AppMeasurementService"
+164-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:36:13-84
+165            android:enabled="true"
+165-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:37:13-35
+166            android:exported="false" />
+166-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:38:13-37
+167        <service
+167-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:39:9-43:72
+168            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+168-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:40:13-87
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:41:13-35
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:42:13-37
+171            android:permission="android.permission.BIND_JOB_SERVICE" />
+171-->[com.google.android.gms:play-services-measurement:21.6.2] C:\Users\nikit\.gradle\caches\transforms-3\47747eaf8c6f5f82a6866aca79f9c024\transformed\jetified-play-services-measurement-21.6.2\AndroidManifest.xml:43:13-69
+172
+173        <uses-library
+173-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\nikit\.gradle\caches\transforms-3\a4dcd7404b5fbd601d8720a65bf80af1\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+174            android:name="android.ext.adservices"
+174-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\nikit\.gradle\caches\transforms-3\a4dcd7404b5fbd601d8720a65bf80af1\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+175            android:required="false" />
+175-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\nikit\.gradle\caches\transforms-3\a4dcd7404b5fbd601d8720a65bf80af1\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+176        <uses-library
+176-->[androidx.window:window:1.0.0-beta04] C:\Users\nikit\.gradle\caches\transforms-3\0e077a99227eabe9db752b38d8113f22\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+177            android:name="androidx.window.extensions"
+177-->[androidx.window:window:1.0.0-beta04] C:\Users\nikit\.gradle\caches\transforms-3\0e077a99227eabe9db752b38d8113f22\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+178            android:required="false" />
+178-->[androidx.window:window:1.0.0-beta04] C:\Users\nikit\.gradle\caches\transforms-3\0e077a99227eabe9db752b38d8113f22\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+179        <uses-library
+179-->[androidx.window:window:1.0.0-beta04] C:\Users\nikit\.gradle\caches\transforms-3\0e077a99227eabe9db752b38d8113f22\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+180            android:name="androidx.window.sidecar"
+180-->[androidx.window:window:1.0.0-beta04] C:\Users\nikit\.gradle\caches\transforms-3\0e077a99227eabe9db752b38d8113f22\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+181            android:required="false" />
+181-->[androidx.window:window:1.0.0-beta04] C:\Users\nikit\.gradle\caches\transforms-3\0e077a99227eabe9db752b38d8113f22\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+182
+183        <provider
+183-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+184            android:name="com.google.firebase.provider.FirebaseInitProvider"
+184-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+185            android:authorities="com.example.diabee.firebaseinitprovider"
+185-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+186            android:directBootAware="true"
+186-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+187            android:exported="false"
+187-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+188            android:initOrder="100" />
+188-->[com.google.firebase:firebase-common:20.4.3] C:\Users\nikit\.gradle\caches\transforms-3\c46994746832d0049dae8e49f05985dc\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+189
+190        <activity
+190-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\nikit\.gradle\caches\transforms-3\bca58c953b17ba8513909939f64656fe\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+191            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+191-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\nikit\.gradle\caches\transforms-3\bca58c953b17ba8513909939f64656fe\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+192            android:exported="false"
+192-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\nikit\.gradle\caches\transforms-3\bca58c953b17ba8513909939f64656fe\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+193            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+193-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\nikit\.gradle\caches\transforms-3\bca58c953b17ba8513909939f64656fe\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+194
+195        <meta-data
+195-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\nikit\.gradle\caches\transforms-3\065ac3b9fe6f9a5d487087a6c3178d4e\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+196            android:name="com.google.android.gms.version"
+196-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\nikit\.gradle\caches\transforms-3\065ac3b9fe6f9a5d487087a6c3178d4e\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+197            android:value="@integer/google_play_services_version" />
+197-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\nikit\.gradle\caches\transforms-3\065ac3b9fe6f9a5d487087a6c3178d4e\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+198    </application>
+199
+200</manifest>

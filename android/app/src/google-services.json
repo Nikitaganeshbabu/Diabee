@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846684548309",
+    "project_id": "diabee-f0689",
+    "storage_bucket": "diabee-f0689.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846684548309:android:9f3a693d704be4fca3465c",
+        "android_client_info": {
+          "package_name": "com.example.diabee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdGyLWxqBthhAbqpcOeBXTpxwtn8UX2tY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
